@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        form{
+            border-radius: 20px;
+            color: aliceblue;
+            border: solid black;
+            width: fit-content;
+            padding: 30px;
+            background-color: rgb(78, 198, 80);
+        }
+       
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>this is Temp_Inserting data</h1>
+        <form  method="POST">
+            {% csrf_token %}
+            {{SFO.as_p}}
+
+            <input type="submit" value="Temp_insertData">
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border-radius: 20px;
+            border: solid black;
+            width: fit-content;
+            padding: 30px;
+            background-color:rgb(50, 168, 176);
+            color: white;
+            font-style:initial;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="color: brown;"> studentForm inseting  </h1>
+        <form  method="POST">
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <input type="submit" value="StudentFormviewinsert">
+        </form>
+    </center>
+</body>
+</html>
+
